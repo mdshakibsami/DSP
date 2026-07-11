@@ -1,0 +1,34 @@
+clc;
+clear;
+close all;
+
+% Load speech file
+[x, Fs] = audioread('sample.wav');
+
+% Time vector
+t = (0:length(x)-1)/Fs;
+
+figure;
+
+subplot(3,1,1)
+plot(t,x)
+title('Speech Signal')
+xlabel('Time (s)')
+ylabel('Amplitude')
+grid on
+
+subplot(3,1,2)
+spectrogram(x,256,200,256,Fs,'yaxis')
+title('Speech Spectrogram')
+
+% Low-pass Butterworth filter
+[b,a] = butter(4,300/(Fs/2));
+
+y = filter(b,a,x);
+
+subplot(3,1,3)
+plot(t,y)
+title('Filtered Speech Signal')
+xlabel('Time (s)')
+ylabel('Amplitude')
+grid on

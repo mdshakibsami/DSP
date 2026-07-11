@@ -5,10 +5,10 @@ close all;
 % Sample index
 n = 0:100;
 
-% Generate Signals
-signal1 = sin(2*pi*0.05*n);
-signal2 = randn(size(n));
-signal3 = n;
+%% Generate Signals
+signal1 = sin(2*pi*0.05*n);      % Sine Wave
+signal2 = randn(size(n));        % Random Noise
+signal3 = n;                     % Ramp Signal
 
 % Store signals
 signals = {signal1, signal2, signal3};
