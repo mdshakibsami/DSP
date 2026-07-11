@@ -1,3 +1,14 @@
+%{
+Problem 1: Basic Signal Generation
+Generate and plot the following signals:
+    •   Unit step u[n]
+    •   Unit impulse δ[n]
+    •   Ramp signal
+    •   Sine wave
+    •   Cosine wave
+Plot them in separate subplots and explain differences.
+%}
+
 clc;
 clear;
 close all;

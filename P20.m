@@ -1,3 +1,11 @@
+%{
+Problem 20: Filter Comparison
+    •   Compare FIR vs IIR:
+        o Response
+        o Stability
+        o Phase characteristics
+%}
+
 clc;
 clear;
 close all;

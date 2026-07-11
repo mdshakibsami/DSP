@@ -1,3 +1,10 @@
+%{
+Problem 24: Signal Classification (Basic Intro)
+    •   Generate multiple signal types
+    •   Extract features (mean, variance, etc.)
+    •   Classify based on properties
+%}
+
 clc;
 clear;
 close all;

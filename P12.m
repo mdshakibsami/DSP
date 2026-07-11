@@ -1,3 +1,11 @@
+%{
+Problem 12: Short-Time Fourier Transform (STFT)
+    •   Apply spectrogram() on:
+        o Stationary signal
+        o Non-stationary signal
+    •   Interpret time-frequency behavior
+%}
+
 clc;
 clear;
 close all;

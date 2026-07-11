@@ -1,3 +1,10 @@
+%{
+Problem 6: Reconstruction
+    •   Sample a signal
+    •   Reconstruct using interpolation (interp1)
+    •   Compare original vs reconstructed.
+%}
+
 clc;
 clear;
 close all;

@@ -1,3 +1,9 @@
+%{
+Problem 17: High-Pass Filter Design
+    •   Remove DC component from signal
+    •   Compare original and filtered
+%}
+
 clc;
 clear;
 close all;

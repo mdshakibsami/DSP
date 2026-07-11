@@ -1,3 +1,14 @@
+%{
+Problem 13: Statistical Measures
+For a given signal:
+    •   Mean
+    •   Variance
+    •   Standard deviation
+    •   Skewness
+    •   Kurtosis
+Use MATLAB built-ins and manual formulas.
+%}
+
 clc;
 clear;
 close all;

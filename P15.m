@@ -1,3 +1,10 @@
+%{
+Problem 15: Random Signal Analysis
+    •   Generate white Gaussian noise
+    •   Analyze statistical properties
+    •   Verify theoretical expectations
+%}
+
 clc;
 clear;
 close all;

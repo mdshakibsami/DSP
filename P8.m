@@ -1,3 +1,10 @@
+%{
+Problem 8: Quantization Error Analysis
+    •   Compute quantization error
+    •   Plot error signal
+    •   Calculate Mean Squared Error (MSE)
+%}
+
 clc;
 clear;
 close all;

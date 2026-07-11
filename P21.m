@@ -1,3 +1,10 @@
+%{
+Problem 21: Noise Removal Project
+    •   Add noise to signal
+    •   Apply appropriate filter
+    •   Evaluate performance using SNR
+%}
+
 clc; clear; close all;
 
 Fs = 1000;

@@ -1,3 +1,12 @@
+%{
+Problem 4: Sampling of Analog Signal
+Sample a sine wave at:
+    •   Nyquist rate
+    •   Above Nyquist
+    •   Below Nyquist
+Plot and compare.
+%}
+
 clc;
 clear;
 close all;

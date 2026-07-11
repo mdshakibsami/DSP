@@ -1,3 +1,9 @@
+%{
+Problem 18: IIR Filter Design
+    •   Design Butterworth filter using butter
+    •   Apply filtering using filter
+%}
+
 clc;
 clear;
 close all;

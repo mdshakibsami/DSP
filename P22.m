@@ -1,3 +1,12 @@
+%{
+Problem 22: Speech Signal Analysis (Optional Advanced)
+    •   Load audio file (audioread)
+    •   Apply:
+        o STFT
+        o Filtering
+    •   Observe real-world signal behavior
+%}
+
 clc;
 clear;
 close all;

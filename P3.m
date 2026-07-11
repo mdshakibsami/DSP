@@ -1,3 +1,10 @@
+%{
+Problem 3: Even and Odd Decomposition
+Take any discrete signal and:
+    •   Decompose into even and odd components
+    •   Verify: x[n]=xe[n]+xo[n]
+%}
+
 clc;
 clear;
 close all;

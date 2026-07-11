@@ -1,3 +1,12 @@
+%{
+Problem 14: Correlation & Covariance
+    •   Compute:
+        o Auto-correlation
+        o Cross-correlation
+        o Covariance
+    •   Interpret physical meaning
+%}
+
 clc;
 clear;
 close all;

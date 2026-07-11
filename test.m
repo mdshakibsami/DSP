@@ -1,55 +1,40 @@
+%{
+Problem 22: Speech Signal Analysis (Optional Advanced)
+    •   Load audio file (audioread)
+    •   Apply:
+        o STFT
+        o Filtering
+    •   Observe real-world signal behavior
+%}
+
 clc;
 clear;
 close all;
 
-% Sample index
-n = 0:100;
+% Load speech file
+[x, Fs] = audioread('sample.wav');
 
-% Generate Signals
-signal1 = sin(2*pi*0.05*n);
-signal2 = randn(size(n));
-signal3 = n;
-
-% Store signals
-signals = {signal1, signal2, signal3};
-names = {'Sine Wave','Noise','Ramp'};
+% Time vector
+t = (0:length(x)-1)/Fs;
 
 figure;
 
-for i = 1:3
+subplot(3,1,1)
+plot(t,x)
+title('Speech Signal')
+xlabel('Time (s)')
+ylabel('Amplitude')
+grid on
 
-    x = signals{i};
 
-    % Plot Signal
-    subplot(3,1,i);
-    plot(n,x,'LineWidth',1.5);
-    title(names{i});
-    xlabel('Sample');
-    ylabel('Amplitude');
-    grid on;
+% Low-pass Butterworth filter
+[b,a] = butter(4,300/(Fs/2));
 
-    %% Feature Extraction
-    Mean = mean(x);
-    Variance = var(x);
-    Std = std(x);
+y = filter(b,a,x);
 
-    %% Signal Classification
-    if Variance > 500
-        predicted = 'Ramp';
-
-    elseif Std < 1
-        predicted = 'Sine Wave';
-
-    else
-        predicted = 'Noise';
-    end
-
-    %% Display Results
-    fprintf('\n-----------------------------\n');
-    fprintf('Actual Signal     : %s\n', names{i});
-    fprintf('Mean              : %.3f\n', Mean);
-    fprintf('Variance          : %.3f\n', Variance);
-    fprintf('Standard Deviation: %.3f\n', Std);
-    fprintf('Predicted Class   : %s\n', predicted);
-
-end
+subplot(3,1,3)
+plot(t,y)
+title('Filtered Speech Signal')
+xlabel('Time (s)')
+ylabel('Amplitude')
+grid on

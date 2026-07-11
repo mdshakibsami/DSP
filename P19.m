@@ -1,3 +1,9 @@
+%{
+Problem 19: Frequency Response
+    •   Plot magnitude and phase response using freqz
+    •   Interpret cutoff frequency
+%}
+
 clc;
 clear;
 close all;

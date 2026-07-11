@@ -1,3 +1,11 @@
+%{
+Problem 2: Signal Operations
+Given x[n]={1,2,3,4}:
+    •   Perform time shifting, scaling, and reversal
+    •   Plot all results
+    •   Verify mathematically.
+%}
+
 clc;
 clear;
 close all;

@@ -1,3 +1,9 @@
+%{
+Problem 9: Effect of Bit Resolution
+    •   Quantize signal using 2, 4, 8 bits
+    •   Compare signal quality and error
+%}
+
 clc;
 clear;
 close all;

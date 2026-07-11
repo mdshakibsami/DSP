@@ -1,3 +1,11 @@
+%{
+Problem 10: Discrete Fourier Transform (DFT)
+    •   Compute DFT using:
+        o Built-in fft
+        o Manual implementation
+    •   Compare results
+%}
+
 clc;
 clear;
 close all;

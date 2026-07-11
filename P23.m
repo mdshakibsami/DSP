@@ -1,3 +1,10 @@
+%{
+Problem 23: Aliasing + Filtering Combined
+    •   Create aliased signal
+    •   Apply anti-aliasing filter
+    •   Analyze improvement
+%}
+
 clc; clear; close all;
 
 Fs = 1000;

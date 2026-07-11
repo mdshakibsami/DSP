@@ -1,3 +1,10 @@
+%{
+Problem 7: Uniform Quantizer
+    •   Implement a uniform quantizer
+    •   Quantize a sine wave
+    •   Plot input vs quantized output
+%}
+
 clc;
 clear;
 close all;

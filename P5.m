@@ -1,3 +1,10 @@
+%{
+Problem 5: Aliasing Demonstration
+Generate a continuous-time sinusoid and:
+    •   Sample at different frequencies
+    •   Show aliasing effect visually
+%}
+
 clc;
 clear;
 close all;

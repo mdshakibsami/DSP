@@ -1,3 +1,10 @@
+%{
+Problem 16: Low-Pass Filter Design
+    •   Design FIR low-pass filter using fir1
+    •   Apply on noisy signal
+    •   Show before/after filtering
+%}
+
 clc;
 clear;
 close all;

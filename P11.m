@@ -1,3 +1,10 @@
+%{
+Problem 11: Frequency Spectrum Analysis
+    •   Generate composite signal (multiple sinusoids)
+    •   Plot magnitude spectrum
+    •   Identify frequency components
+%}
+
 clc;
 clear;
 close all;
